@@ -1,0 +1,77 @@
+{% extends 'layout.html'%}
+{% block content %}
+<div class = "content-section">
+
+		<div class="container">
+               <h3>Enter Query</h3>
+        </div>
+
+    <!-- Form -->
+        <div class="form">
+			<form action="/results" method="POST">
+                  <label for="Serial No">Serial No</label>
+                  <input type="text" placeholder="Serial No"  name="Serial No"/>
+
+                  <label for="GRE Score">GRE Score</label>
+                  <input type="text" placeholder="GRE Score" name="GRE Score"/>
+            </br>
+                  <label for="TOEFL SCore">TOEFL SCore</label>
+                  <input type="text" placeholder="TOEFL SCore" name="TOEFL SCore"/>
+
+                  <label for="SOP">SOP</label>
+                  <input type="text" placeholder="SOP" name="SOP"/>
+             </br>
+                  <label for="LOR">LOR</label>
+                  <input type="text" placeholder="LOR"  name="LOR"/>
+
+                  <label for="CGPA">CGPA</label>
+                  <input type="text" placeholder="CGPA"  name="CGPA"/>
+              </br>
+                  <label for="Research">Research</label>
+                  <input type="text" placeholder="Research"  name="Research"/>
+
+                  <label for="Chance of Admit">Chance of Admit</label>
+                  <input type="text" placeholder="Chance of Admit"  name="Chance of Admit"/>
+</br>
+               ---------------------------------------------------------------------------------------------------
+
+               <label for="Update Serial No">Update Serial No</label>
+                  <input type="text" placeholder="Update Serial No"  name="Update Serial No"/>
+
+                  <label for="Update GRE Score">Update GRE Score</label>
+                  <input type="text" placeholder="Update GRE Score" name="Update GRE Score"/>
+            </br>
+                  <label for="Update TOEFL SCore">Update TOEFL SCore</label>
+                  <input type="text" placeholder="Update TOEFL SCore" name="Update TOEFL SCore"/>
+
+                  <label for="Update SOP">Update SOP</label>
+                  <input type="text" placeholder="Update SOP" name="Update SOP"/>
+             </br>
+                  <label for="Update LOR">Update LOR</label>
+                  <input type="text" placeholder="Update LOR" name="Update LOR"/>
+
+                  <label for="CGPA">Update CGPA</label>
+                  <input type="text" placeholder="Update CGPA"  name="Update CGPA"/>
+              </br>
+                  <label for="Research">Update Research</label>
+                  <input type="text" placeholder="Update Research"  name="Update Research"/>
+
+                  <label for="Chance of Admit">Update Chance of Admit</label>
+                  <input type="text" placeholder="Update Chance of Admit"  name="Update Chance of Admit"/>
+
+
+                  <label for="Operation">Operation</label>
+                  <select id="operation" name="operation">
+                        <option value="Add">Add</option>
+                        <option value="Search">Search</option>
+                        <option value="View List">View List</option>
+                        <option value="Update">Update</option>
+                  </select>
+
+                <input type="submit" value="Submit">
+              <br />
+
+            </form>
+    </div>
+</div>
+{% endblock content %}
